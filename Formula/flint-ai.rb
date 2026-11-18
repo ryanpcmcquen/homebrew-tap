@@ -1,4 +1,4 @@
-class Flint < Formula
+class FlintAi < Formula
   desc "Morning standup brief and AI session manager"
   homepage "https://github.com/ryanpcmcquen/flint"
   url "https://github.com/ryanpcmcquen/flint/archive/refs/tags/0.5.0.tar.gz"
