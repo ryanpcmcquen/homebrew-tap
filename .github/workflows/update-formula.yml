@@ -1,0 +1,19 @@
+name: Update formula
+
+on:
+  schedule:
+    - cron: "17 7 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Update formula
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: bash scripts/update-formula.sh
